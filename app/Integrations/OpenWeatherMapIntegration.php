@@ -4,8 +4,6 @@ namespace App\Integrations;
 
 use Carbon\Carbon;
 use GuzzleHttp\Client;
-use GuzzleHttp\Exception\RequestException;
-use PhpParser\Node\Expr\Throw_;
 
 class OpenWeatherMapIntegration 
 {
