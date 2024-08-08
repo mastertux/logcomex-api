@@ -33,7 +33,7 @@ class CityService
         return $this->cityRepository->store($city);
     }
 
-    public function update(array $city, $id): void
+    public function update(array $city, int $id): void
     {
         $this->cityRepository->update($city, $id);
     }

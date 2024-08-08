@@ -17,7 +17,11 @@ class CityFactory extends Factory
     public function definition(): array
     {
         return [
-            //
+            'city_name' => $this->faker->city,
+            'state_code' => $this->faker->stateAbbr,
+            'country_code' => $this->faker->countryCode,
+            'lat' => $this->faker->latitude,
+            'lon' => $this->faker->longitude,
         ];
     }
 }

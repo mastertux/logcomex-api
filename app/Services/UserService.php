@@ -2,7 +2,7 @@
 
 namespace App\Services;
 use App\Repositories\UserRepository;
-
+use App\DTO\UserDTO;
 class UserService 
 {
     private UserRepository $userRepository;
@@ -27,7 +27,7 @@ class UserService
         return $this->userRepository->store($user);
     }
 
-    public function update(array $user, $id)
+    public function update(array $user, int $id)
     {
         return $this->userRepository->update($user, $id);
     }
